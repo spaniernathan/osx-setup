@@ -1,11 +1,5 @@
 #! /usr/bin/sh
 
-# Enable developement on macOS
-xcode-select --install
-
-# Install Homebrew package manager
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 # Install ZSH
 brew install zsh
 
@@ -14,9 +8,6 @@ chsh -s $(which zsh)
 
 # Install Oh-My-Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
-# Update brew
-brew update
 
 # Cask
 brew cask install iterm2
@@ -35,7 +26,6 @@ brew cask install code
 brew cask install google-chrome
 
 # Formulae
-brew install git
 brew install cmake
 brew install docker-machine
 brew install docker
@@ -49,3 +39,6 @@ cat vscode-extensions | while IFS= read -r line || [[ -n "$line" ]]; do
     code --install-extension $line
 done
 
+cp dotfiles/.* $HOME/
+
+source $HOME/.zshrc
