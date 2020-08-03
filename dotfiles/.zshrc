@@ -26,7 +26,7 @@ DISABLE_UPDATE_PROMPT="false" # Automatically update without prompting
 DISABLE_MAGIC_FUNCTIONS="false" # Set to true if pasting URLs and other text is messed up
 DISABLE_LS_COLORS="false" # Disable colors in ls
 DISABLE_AUTO_TITLE="false" # Disable auto-setting terminal title
-ENABLE_CORRECTION="true" # Command auto-correction
+ENABLE_CORRECTION="false" # Command auto-correction
 COMPLETION_WAITING_DOTS="true" # Display red dots whilst waiting for completion
 
 # Uncomment the following line if you want to disable marking untracked files

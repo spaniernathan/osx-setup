@@ -14,5 +14,5 @@ brew update
 brew install git
 
 # Clone repo and start install script
-git clone git@github.com:spaniernathan/osx-setup.git
+git clone git@github.com:spaniernathan/osx-setup
 chmod +x osx-setup/setup.sh && ./osx-setup/setup.sh

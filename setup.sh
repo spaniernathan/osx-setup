@@ -1,4 +1,4 @@
-#! /usr/bin/sh
+#! bin/sh
 
 # Install ZSH
 brew install zsh
@@ -22,7 +22,6 @@ brew cask install virtualbox
 brew cask install microsoft-teams
 brew cask install microsoft-outlook
 brew cask install postman
-brew cask install code
 brew cask install google-chrome
 
 # Formulae
@@ -33,11 +32,6 @@ brew install docker-compose
 brew install lazydocker
 brew install go
 brew install protoc-gen-go
-
-# Install vscode extensions
-cat vscode-extensions | while IFS= read -r line || [[ -n "$line" ]]; do
-    code --install-extension $line
-done
 
 cp dotfiles/.* $HOME/
 
