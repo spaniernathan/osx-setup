@@ -7,11 +7,14 @@ export GOPATH=$HOME/go
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$GOPATH/bin
+export PATH=/usr/local/sbin:$PATH
 
 # ZSH RELATED PATHS
 export ZSH="/Users/spaniernathan/.oh-my-zsh"
 
-
+# NVM
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # ----- ZSH CONFIG -----
 
@@ -21,7 +24,7 @@ ZSH_THEME="gianu"
 
 CASE_SENSITIVE="false" # Case sensitive auto-completion
 DISABLE_AUTO_UPDATE="false" # Bi-weekly auto-update checks
-DISABLE_UPDATE_PROMPT="false" # Automatically update without prompting
+DISABLE_UPDATE_PROMPT="true" # Automatically update without prompting
 # export UPDATE_ZSH_DAYS=13 # How often to auto-update (in days)
 DISABLE_MAGIC_FUNCTIONS="false" # Set to true if pasting URLs and other text is messed up
 DISABLE_LS_COLORS="false" # Disable colors in ls
@@ -71,3 +74,5 @@ fi
 
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
+alias gcmsgs="git commit -S -m"
+
