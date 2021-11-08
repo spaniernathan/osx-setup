@@ -10,28 +10,23 @@ chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Cask
-brew cask install iterm2
-brew cask install alfred
-brew cask install spectacle
-brew cask install bitwarden
-brew cask install keybase
-brew cask install bloomrpc
-brew cask install jetbrains-toolbox
-brew cask install docker
-brew cask install virtualbox
-brew cask install microsoft-teams
-brew cask install microsoft-outlook
-brew cask install postman
-brew cask install google-chrome
-
-# Formulae
-brew install cmake
+brew install iterm2
+brew install alfred
+brew install spectacle
+brew install bitwarden
+brew install keybase
+brew install jetbrains-toolbox
+brew install virtualbox
+brew install postman
+brew install google-chrome
+brew install nvm
 brew install docker-machine
-brew install docker
-brew install docker-compose
-brew install lazydocker
 brew install go
-brew install protoc-gen-go
+brew install zoom
+brew install slack
+brew install meeter
+brew install figma
+brew install gnupg
 
 cp dotfiles/.* $HOME/
 
